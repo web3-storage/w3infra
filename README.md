@@ -123,6 +123,8 @@ To set a fallback value for `staging` or an ephmeral PR build use [`sst secrets 
 $ npx sst secrets set-fallback --region us-east-2 PRIVATE_KEY "MgCZG7...="
 ```
 
+npx sst secrets set-fallback --region us-west-2 PRIVATE_KEY "MgCZG7...="
+
 **note** The fallback value can only be inherited by stages deployed in the same AWS account and region.
 
 Confirm the secret value using [`sst secrets list`](https://docs.sst.dev/config#sst-secrets)
