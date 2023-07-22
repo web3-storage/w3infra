@@ -13,6 +13,11 @@ export const storeTableProps = {
   },
   // space + link must be unique to satisfy index constraint
   primaryIndex: { partitionKey: 'space', sortKey: 'link' },
+  cdk: {
+    table: {
+      pointInTimeRecovery: false
+    }
+  }
 }
 
 /** @type TableProps */
@@ -25,6 +30,11 @@ export const uploadTableProps = {
   },
   // space + root must be unique to satisfy index constraint
   primaryIndex: { partitionKey: 'space', sortKey: 'root' },
+  cdk: {
+    table: {
+      pointInTimeRecovery: false
+    }
+  }
 }
 
 /** @type TableProps */
